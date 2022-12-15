@@ -1,17 +1,16 @@
-﻿// 5. Напишите программу, которая на вход принимает
-// одно число (N), а на выходе показывает все целые
-// числа в промежутке от -N до N.
-// 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4"
-// 2 -> " -2, -1, 0, 1, 2"
-// Итерация №2
-// Решение в группах задач: 20 мин
+﻿//3. Напишите программу, которая будет выдавать
+//название дня недели по заданному номеру.
+//3 -> Среда
+//5 -> Пятница
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int count = -number;
+Console.Write("Введите номер дня недели:");
+string a = Console.ReadLine();
 
-while (count <= number)
-{
-    Console.Write(count + " ");
-    count++;
-}
+if (a== "1")Console.WriteLine("Понедельник"); 
+else if (a== "2")Console.WriteLine("Вторник");
+else if (a== "3")Console.WriteLine("Среда");
+else if (a== "4")Console.WriteLine("Четверг");   
+else if (a== "5")Console.WriteLine("Пятница");   
+else if (a== "6")Console.WriteLine("Суббота");      
+else if (a== "7")Console.WriteLine("Воскресенье");
+else if (a== "8")Console.WriteLine("Нет дня недели с таким номером.");
